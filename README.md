@@ -17,7 +17,7 @@
 
 1. **Clone the Repository**:
     ```cmd
-    git clone https://github.com/yourusername/PyHotKey.git
+    git clone https://github.com/MarekKujan/PyHotKey.git
     cd PyHotKey
     ```
 
