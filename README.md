@@ -78,7 +78,8 @@ This script is used to create a temporary email address.
 - **Asigned shortcut**: ctr + alt + E
 
 - **Requirements**: 
-    - `geckodriver` must be in the Windows PATH.
+    - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+    - [geckodriver](https://github.com/mozilla/geckodriver/releases) must be in the Windows PATH.
 - **Setup Instructions**: 
     - Replace `profile_path` on line 15 with the path to a Firefox profile that has an ad blocker and handles data collection pop-ups.
 
