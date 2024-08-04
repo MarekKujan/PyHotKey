@@ -49,21 +49,21 @@ def create_shortcut(target_path, shortcut_path):
 
 def main():
     # Ensure win32com, pipreqs and virtualenv are installed
-    #check_and_install_package('pipreqs')
-    #check_and_install_package('virtualenv')
-    #check_and_install_package('pywin32')
+    check_and_install_package('pipreqs')
+    check_and_install_package('virtualenv')
+    check_and_install_package('pywin32')
     
     # Create a python venv
-    #generate_requirements()
-    #create_virtual_environment()
-    #install_requirements()
-    #remove_requirements_file()
+    generate_requirements()
+    create_virtual_environment()
+    install_requirements()
+    remove_requirements_file()
 
     # Create ahk shortcut in startup folder
-    #ahk_script = Path(__file__).parent.resolve() / "main.ahk"
-    #shortcut_location = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autohotkey.lnk"
-    #print("Creating a ahk shortcut in startup folder...")
-    #create_shortcut(ahk_script, shortcut_location)
+    ahk_script = Path(__file__).parent.resolve() / "main.ahk"
+    shortcut_location = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autohotkey.lnk"
+    print("Creating a ahk shortcut in startup folder...")
+    create_shortcut(ahk_script, shortcut_location)
 
     # run ahk script
     print("starting ahk script...")
