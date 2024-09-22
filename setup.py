@@ -60,7 +60,7 @@ def main():
     remove_requirements_file()
 
     # Create ahk shortcut in startup folder
-    ahk_script = Path(__file__).parent.resolve() / "main.ahk"
+    ahk_script = Path(__file__).parent.resolve() / "shortcuts.ahk"
     shortcut_location = Path.home() / "AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autohotkey.lnk"
     print("Creating a ahk shortcut in startup folder...")
     create_shortcut(ahk_script, shortcut_location)
